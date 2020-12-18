@@ -26,17 +26,17 @@ print(array)
 ### 재귀
 ```python
 def combi(items, n):
-	ans = []
-	if n == 1:
-		for i in items:
-			ans.append([i])
-	elif n > 1:
-		for i in range(len(items)-n+1):
-			for next in combi(items[i+1:], n-1):
-				ans.append([items[i]]+next)
-	return ans
+    ans = []
+    for i in range(len(items)):
+        if n == 1:
+            ans.append([items[i]])
+        elif n > 1:
+            for next in combi(items[i+1:], n-1):
+                ans.append([items[i]]+next)
+    return ans
 
 
-items= [1, 2, 3, 4]
+items = [1, 2, 3, 4]
 print(combi(items, 2))
 ```
+
