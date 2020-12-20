@@ -25,6 +25,24 @@ print(array)
 
 ### 재귀
 ```python
+def combi(depth, pre):
+    if depth == r:
+        print(result)
+    else:
+        for i in range(pre, len(items)):
+            result[depth] = items[i]
+            combi(depth+1, i+1)
+
+
+items = [1, 2, 3, 4]
+r = 2
+result = [0] * r
+
+combi(0, 0)
+```
+
+### DFS
+```python
 def combi(items, n):
     ans = []
     for i in range(len(items)):
