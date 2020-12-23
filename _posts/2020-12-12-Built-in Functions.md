@@ -53,8 +53,7 @@ for score in zip([20, 50, 40], [10, 50, 70]):
 ```
 
 ### format()
-포맷함수에서 몰랐던 부분, 반올림 되어서 round 쓸 필요 없음
-
+1. 반올림
 ```python
 a = 3.145
 
@@ -64,4 +63,23 @@ print(format(round(a, 2), ".2f"))
 print(format(a, ".2f"))
 > 3.15
 ```
+2. 진수 변환
+```python
+a = 60
+
+print(format(a, '#b'))
+print(format(a, 'b'))
+print(format(a, '#o'))
+print(format(a, 'o'))
+print(format(a, '#x'))
+print(format(a, 'x'))
+
+> 0b111100
+> 111100
+> 0o74
+> 74
+> 0x3c
+> 3c
+```
+
 하나씩 추가 예정입니다.
