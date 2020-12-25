@@ -1,6 +1,6 @@
 ---
-title:  "조합"
-excerpt: "Combination"
+title:  "Combination"
+excerpt: "조합"
 
 categories: 
   - Algorithm
