@@ -44,10 +44,34 @@ toc_label: "Algorithm of Python"
 
 
 
-**입력 예시**  예시 복사
+**입력 예시**
 
-800 700 900 198 330
+800  
+700  
+900  
+198  
+330
 
 **출력 예시**
 
 987.8
+
+### 문제 정리
+세트메뉴는 파스타 1개, 주스 1잔으로 구성된다. 세트메뉴의 가격은 파스타와 주스를 합한 가격에 10% 를 더한 값이다.
+모든 세트메뉴의 가격을 구한 뒤 그 중 최소값을 출력하였다. 
+
+```python
+pasta = []
+for t in range(3):
+    pasta.append(int(input()))
+juice = []
+for t in range(2):
+    juice.append(int(input()))
+
+set_price = []
+for p in pasta:
+    for j in juice:
+        set_price.append((p+j)*1.1)
+        
+print(format(min(set_price), '.1f'))
+```
