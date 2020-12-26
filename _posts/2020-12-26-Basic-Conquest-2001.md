@@ -4,7 +4,9 @@ excerpt: "최소 대금"
 categories: 
   - Algorithm
 tags:
-  - study, greedy, python
+  - study
+  - greedy
+  - python
 toc: true
 toc_label: "Algorithm of Python"
 ---
