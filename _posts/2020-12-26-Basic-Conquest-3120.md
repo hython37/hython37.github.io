@@ -91,3 +91,11 @@ while difference:
     difference = abs(a-b)
 print(cnt)
 ```
+다른 방식으로 풀어보았다. 시간복잡도 O(1)  
+diff 는 1~9 까지 버튼 누름의 최소 횟수를 저장해놓은 리스트이다
+
+```python
+diff = [0, 1, 2, 3, 2, 1, 2, 3, 3, 2]
+a, b = map(int, input().split())
+print(abs(a-b) // 10 + diff[abs(a-b) % 10])
+```
