@@ -53,9 +53,11 @@ toc_label: "Algorithm of Python"
 최소한의 버튼 사용으로 목표온도가 되는 버튼의 횟수를 출력한다.
 
 **입력 예시**
+
 7 34
 
 **출력 예시**
+
 5
 
 ### 문제 정리
@@ -69,38 +71,21 @@ toc_label: "Algorithm of Python"
 a, b = map(int, input().split())
 cnt = 0
 difference = abs(a-b)
+
 while difference:
     if a > b:
-        if difference >= 10:
+        if difference > 7:
             a -= 10
-        elif difference == 9:
-            a -= 9
-            cnt += 1
-        elif difference == 8:
-            a -= 8
-            cnt += 2
-        elif difference >= 5:
+        elif difference > 3:
             a -= 5
-        elif difference == 4:
-            a -= 4
-            cnt += 1
-        elif difference >= 1:
+        elif difference > 0:
             a -= 1
     else:
-        if difference >= 10:
+        if difference > 7:
             a += 10
-        elif difference == 9:
-            a += 9
-            cnt += 1
-        elif difference == 8:
-            a += 8
-            cnt += 2
-        elif difference >= 5:
+        elif difference > 3:
             a += 5
-        elif difference == 4:
-            a += 4
-            cnt += 1
-        elif difference >= 1:
+        elif difference > 0:
             a += 1
     cnt += 1
     difference = abs(a-b)
