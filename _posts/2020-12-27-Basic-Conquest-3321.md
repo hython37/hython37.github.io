@@ -11,7 +11,7 @@ toc: true
 toc_label: "Algorithm of Python"
 ---
 
-## 3301 : 거스름돈
+## 3321 : 최고의 피자
 [코드업 바로가기](https://codeup.kr/problem.php?id=3321){: target="_blank"}
 
 **문제 설명**
