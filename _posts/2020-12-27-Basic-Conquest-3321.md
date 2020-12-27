@@ -87,13 +87,11 @@ Cal = C/A
 calorie = C
 price = A
 for i in range(N):
+    if (calorie + D[i])/(price + B) < Cal:
+        continue
     calorie += D[i]
     price += B
-    if calorie/price < Cal:
-        calorie -= D[i]
-        price -= B
-        continue
     Cal = calorie/price
-    
+
 print(int(Cal))
 ```
