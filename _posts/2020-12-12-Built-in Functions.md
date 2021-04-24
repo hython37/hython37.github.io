@@ -63,6 +63,7 @@ print(format(round(a, 2), ".2f"))
 print(format(a, ".2f"))
 > 3.15
 ```
+
 2. 진수 변환
 ```python
 a = 60
